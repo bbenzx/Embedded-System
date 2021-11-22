@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "serious-studio-309902",
+  "private_key_id": "d9737ef4e13debfdaa0ca9cb135d27305b706a9f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCoWBpbw1SM+Vxx\nuA+OuFGrUj4gKsnCOisHGpj1QNIVKgLCkH7YHFKyZoOsDg3gWTkGwp/5g0wWzHbq\n4yNTccWUkY/ElP0FPlhR0x1p6WI2DYC1f54+TM8tatp6ekfnCRYZI0HJqxOi3R9/\ng3hXGKTKe4lgAHzFph3tqyvjAoqOXlCxbjJ0sXfKXUu0jdls02tZiUau26ZlBP9O\np+MwC/MpoLGuIxbWLoNT5yGx4vaY2Bf3wxE9YEpR/9N/JHZLtr10i7qtgg38YRvY\nUrnzKGf3/kC7ZeWwc8HExmD+e3/08d0rNQ36za4eMC4tglltQ23Qk9VyuWCZ4qJ4\nkfrt3ifFAgMBAAECggEACzgp840qVKXm1RZjBQxANyaJSOwJG8Z0KSpK4OeDyNDO\ns8hdB8qlcUnXQy+Bmb7gh9SPRFoNh2RzlXZzW4OU2zCzT/LtBP0xdiyXhIA/ISKX\nviDl+zlzwk9hhbGiGqH2pNC+ePILojpR99XbfpSAIRWII4uMxUBrtLQIff3knZXM\nZq6la+RDbq2OlHp+pBJ/APJ44yPixpD1unknxHiN9x0CgmVXuBDUQrrnaxNPt519\npvCNVecgqI3QnMbZJFHnbDwiKQcxlV5hYDjHbmKtwhmbBnI/5LPN21iTD2Fhe+OG\nSMHyDXBw9HAhjyYC+AGv4nT8Xc17GM8E2Dh78qrPqQKBgQDTCdJ7pEb6Fagj3IX3\nxXSe2ae+teGAq2mWm5vB3SuZ0zikl6GRtpp0xAq8AirvzxbkmVXe1eh/CGgBBMx4\nocblQLtbcqGe5n9Cz/NAxR1IWaojrmMdsWUIKXlJKCzaYnqBFoH1Y9qazyqtAA75\nQqrPCf2AeTFK3QNaPcWuuPa4KQKBgQDMNbV3vvufivKYNusU5BGtKRBx01Ulgg8X\nNENXuO3kVty1v27FtC9MpIMFUNfDGKIqNwNX3AiXChbSx74NgiMWA7/SBo9Wp8/l\n+tbbGGFNnLIH6xpLNybXFFK17e5bLa71BoROVBMCnItyTZwLi4uDJYuaC8iIt2Zf\nWj0KoFLWPQKBgCF1Dy+W7cG8KTn2Pi732PNOIm/zudqCUm0UIm9rtvveJr7BY1YM\nkxQr+F+yIEiAlmqLfLelRgTNul9e+WOuki/KQWnQFJtyg35+JVyBY5ES1gxuGzyb\n4R6YJKhafDHrJuzMOrJCsGeWrHdc6QLPdPD57nytugjaXSuzW2HF5SdxAoGBAMUM\nooHdCSLHShY1EByFgsULlfGwEj5yRKuIY98W9H7cjnbWNUaS+v1C1abgfoKkl36S\nvSgfiy5rruBPm4WfaMnKbmN0rwXYQlVR+ddKrEHfDS903ldr7Y+m7bTd1Z2n9GY9\nlpeaqwlfE3QFjajaS5IOPao06pl6F0+1XKePUr+lAoGAIercn+Zd7B2XlS3hEGck\nXPWFT/z6DncT73b2jIAfII9mGuJq2iUgrrkQ8q5SGisXTU9SV9meDFwxnptYDPYb\nA67rgc4mfF9nqXuYykMAoAtRixHa87V+wDMrljr5NJpJtvZNgh0jwRqa+vs+lOAa\nj2u9BedNyq2UgvIoDe6Owuc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "sheet-278@serious-studio-309902.iam.gserviceaccount.com",
+  "client_id": "111554999379177437881",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sheet-278%40serious-studio-309902.iam.gserviceaccount.com"
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title> Raspberry Pi Web Server</title>
+<body>
+
+<h1 style="text-align: center;">Control LED</h1>
+<h2 style="text-align: center;" id="timeupdate"></h2>
+<p style="text-align: center;"><button type="button" id="ButtonOnclick">ON</button> <button type="button" id="ButtonOffclick">OFF</button></p>
+<h2 style="text-align: center;"><strong>Status:&nbsp;</strong><font color="red"><strong id="status">OFF<br /></strong></font></h2>
+
+
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+
+$(
+/* Control LED function*/
+function() {
+    $('#ButtonOnclick').click(function()
+      {
+         $.getJSON('/3/ON',function(data)
+           {
+	     $("#status").text(data.status);
+           });
+      })
+
+     $('#ButtonOffclick').click(function()
+      {
+         $.getJSON('/3/OFF',function(data)
+           {
+	     $("#status").text(data.status);
+           });
+      })
+}
+);
+
+$(
+function updateClock() {
+    $.getJSON('/updateTime',function(data) 
+	{
+	  $("#timeupdate").text(data.timeupdate);
+	  setTimeout(function(){updateClock();},1000);
+	});
+}
+);
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+

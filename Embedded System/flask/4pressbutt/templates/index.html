@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<title> Raspberry Pi Web Server</title>
+<body>
+
+<h1 style="text-align: center;">Monitor button</h1>
+<h2 style="text-align: center;" id="ServerTime"></h2>
+<h2 style="text-align: center;"><strong>Status:&nbsp;</strong><font color="red"><strong id="Status">Released<br /></strong></font></h2>
+
+
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+
+
+$(
+function updateClock() {
+    $.getJSON('/updateTime',function(data) 
+	{
+	  $("#Status").text(data.ButtonStatus);
+	  $("#ServerTime").text(data.Time);
+	  setTimeout(function(){updateClock();},1000);
+	});
+}
+);
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+

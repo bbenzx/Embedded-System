@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="text-align: center;">My First WebServer HTML</h1>
+
+<p style="text-align: center;"><button type="button" onclick="OnButton_OnClick()">ON</button>
+<button type="button" onclick="OffButton_OnClick()">OFF</button></p>
+<h2 style="text-align: center;"><strong>Status:&nbsp;</strong><font color="red"><strong id="status">OFF<br /></strong></font></h2>
+<script>
+function OnButton_OnClick() {
+    document.getElementById("status").innerHTML = "ON";
+}
+function OffButton_OnClick() {
+    document.getElementById("status").innerHTML = "OFF";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+

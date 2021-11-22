@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title> Raspberry Pi Web Server</title>
+<body>
+
+<h1 style="text-align: center;">Monitor button</h1>
+<h2 style="text-align: center;" id="ServerTime"></h2>
+<p Style="text-align: center;"><button type = "button" id = "Buttonclick">ChangeToPercent</button></p>
+<h2 style="text-align: center;"><strong>Value:&nbsp;</strong><font color="red"><strong id="Value"><br /></strong></font></h2>
+
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+	
+$(
+function() {
+	$('#Buttonclick').click(function() 
+	{
+	  $.getJSON('/changeValueType',function(data)
+		{
+		  $("#Buttonclick").text(data.word);
+		});
+	})
+
+}
+);
+
+$(
+function updateTime() {
+    $.getJSON('/updateTime',function(data) 
+	{
+	  $("#Value").text(data.Value);
+	  $("#ServerTime").text(data.Time);
+	  setTimeout(function(){updateTime();},100);
+	});
+}
+);
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+

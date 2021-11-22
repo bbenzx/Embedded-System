@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title> Raspberry Pi Web Server</title>
+<body>
+
+<h1 style="text-align: center;">Sensor value</h1>
+<p style="text-align: center;"><button onclick="myFunction()" id="myButton" value="Change to Percent">Change to Percent</button>
+<h2 style="text-align: center;" id="ServerTime"></h2>
+<h2 style="text-align: center;"><strong>Value:&nbsp;</strong><font color="red"><strong id="Status">0<br /></strong></font></h2>
+
+
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+var type_select="Value";
+
+function myFunction() {
+
+                var btn = document.getElementById("myButton");
+
+                if (btn.value == "Change to Percent") {
+                    btn.value = "Change to Value";
+                    btn.innerHTML = "Change to Value";
+                    type_select="Percent";
+                }
+                else {
+                    btn.value = "Change to Percent";
+                    btn.innerHTML = "Change to Percent";
+                    type_select="Value";
+                }
+
+            }
+
+$(
+function updateClock() {
+    var num=0;
+    $.getJSON('/updateTime',function(data) 
+	{
+          if(type_select== "Percent"){
+          num=parseInt(data.status,10);
+          num=num/175.46
+          $("#Status").text(num + "%");
+          }
+          else{
+              $("#Status").text(data.status);
+          }
+	  $("#ServerTime").text(data.Time);
+	  setTimeout(function(){updateClock();},1000);
+	});
+}
+);
+
+</script>
+
+</body>
+</html>
+
